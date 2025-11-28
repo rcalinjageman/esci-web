@@ -428,7 +428,7 @@ $(function() {
 
   //breadcrumbs
   $('#homecrumb').on('click', function() {
-    window.location.href = "https://www.esci.thenewstatistics.com/";
+    window.location.href = "https://esci.thenewstatistics.com/";
   })
 
   initialise();
