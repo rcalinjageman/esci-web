@@ -41,6 +41,7 @@ Licence       GNU General Public LIcence Version 3, 29 June 2007
 1.1.0  6 Nov 2020 Rationalised into one repository
 1.1.1  6 Nov 2020 #6 Remove tip for header, subheader
 1.1.2 20 Nov 2020 Precision released from lockdown.
+1.1.8 28 Nov 2025 Add p Value Roulette
 
 */
 //#endregion 
@@ -67,6 +68,7 @@ $(function() {
   const $menu4 = $('#menu4');  //precision
   const $menu5 = $('#menu5');  //correlation
   const $menu6 = $('#menu6');  //dance-r
+  const $menu7 = $('#menu7');  //p-value-roulette
 
 
   const $menuimages = $('.menuimages');
@@ -77,6 +79,7 @@ $(function() {
   const $menuimage4 = $('#menuimage4');
   const $menuimage5 = $('#menuimage5');
   const $menuimage6 = $('#menuimage6');
+  const $menuimage7 = $('#menuimage7');
 
   //#endregion
 
@@ -136,6 +139,14 @@ $(function() {
     $menuimage6.hide();
   })  
 
+  $menu7.on('mouseenter', function() {
+    $menuimage7.show();
+  })
+
+  $menu7.on('mouseleave', function() {
+    $menuimage7.hide();
+  })  
+
   //menu bar
   $('#menu1').on('click', function() {
     window.location.href = './esci-dances.html';
@@ -183,6 +194,10 @@ $(function() {
     window.location.href = './esci-dance-r.html';
   })
 
+  $('#menu7').on('click', function() {
+    window.location.href = './esci-p-value-roulette.html';
+  })
+
   $('#dance-r').on('click', function() {
     window.location.href = './esci-dance-r.html';
   })
@@ -208,6 +223,7 @@ $(function() {
     Tipped.create('#menu4', 'Find <em>N</em> required to achieve desired target precision.',                                                        { skin: 'esci', size: 'xlarge', showDelay: 750, behavior: 'mouse', target: 'mouse', maxWidth: 250, hideOthers: true, hideOnClickOutside: true, hideAfter: 0 });
     Tipped.create('#menu5', 'See a number of scatter plots for any chosen correlation <em>r</em>.',                                                 { skin: 'esci', size: 'xlarge', showDelay: 750, behavior: 'mouse', target: 'mouse', maxWidth: 250, hideOthers: true, hideOnClickOutside: true, hideAfter: 0 });
     Tipped.create('#menu6', 'Investigate sampling of correlation values. See scatter plots and dances.',                                            { skin: 'esci', size: 'xlarge', showDelay: 750, behavior: 'mouse', target: 'mouse', maxWidth: 250, hideOthers: true, hideOnClickOutside: true, hideAfter: 0 });
+    Tipped.create('#menu7', 'Demonstrate how <em>p</em> values predict the future only vaguely.',                                            { skin: 'esci', size: 'xlarge', showDelay: 750, behavior: 'mouse', target: 'mouse', maxWidth: 250, hideOthers: true, hideOnClickOutside: true, hideAfter: 0 });
 
     //spare
     // Tipped.create('. tip', '', { skin: 'esci', size: 'xlarge', showDelay: 750, behavior: 'mouse', target: 'mouse', maxWidth: 250, hideOthers: true, hideOnClickOutside: true, hideAfter: 0 });
