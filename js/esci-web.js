@@ -41,7 +41,7 @@ Licence       GNU General Public LIcence Version 3, 29 June 2007
 1.1.0  6 Nov 2020 Rationalised into one repository
 1.1.1  6 Nov 2020 #6 Remove tip for header, subheader
 1.1.2 20 Nov 2020 Precision released from lockdown.
-1.1.8 28 Nov 2025 Add p Value Roulette
+1.1.8 28 Nov 2025 Add Significance Roulette
 
 */
 //#endregion 
@@ -68,7 +68,7 @@ $(function() {
   const $menu4 = $('#menu4');  //precision
   const $menu5 = $('#menu5');  //correlation
   const $menu6 = $('#menu6');  //dance-r
-  const $menu7 = $('#menu7');  //p-value-roulette
+  const $menu7 = $('#menu7');  //significance-roulette
 
 
   const $menuimages = $('.menuimages');
@@ -195,7 +195,7 @@ $(function() {
   })
 
   $('#menu7').on('click', function() {
-    window.location.href = './esci-p-value-roulette.html';
+    window.location.href = './esci-significance-roulette.html';
   })
 
   $('#dance-r').on('click', function() {
